@@ -67,6 +67,6 @@ module m_top();
   initial #150 forever #50 w_clk = ~w_clk;
   proc1 p(w_clk);
 
-  initial #99 forever #100 $display("%3d %d %d %d %d", $time,  p.w_r1, p.w_r2, p.w_rt, p.m6);
+  initial #99 forever #100 $display("%3d %h %h %h %h", $time,  p.w_r1, p.w_r2, p.w_rt, p.m6);
   initial #500 $finish;
 endmodule
